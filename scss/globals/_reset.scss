@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--font-family-2);
+  display: inline-block;
+}
+a:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+  transition: 0.2s ease-in;
+}
+button {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-family-2);
+  color: var(--white);
+  background-color: var(--primary-color);
+}

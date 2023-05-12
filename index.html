@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>omniGPT | Landing page</title>
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/68a6b8dc1f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <!-- Header Starts Here -->
+      <header>
+        <div class="logo">
+          <a href="#"><img src="./assets/logo.png" alt="logo" /></a>
+        </div>
+        <nav class="header-links-wrapper" id="nav">
+          <div class="close-icon" id="close-icon">
+            <i
+              class="fa fa-times"
+              onclick="closeToggler()"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <div class="header-links">
+            <a href="#">Blog</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Sign In</a>
+          </div>
+        </nav>
+        <i class="fa-solid fa-bars" onclick="leftToggler()"></i>
+      </header>
+      <!-- Header Ends here -->
+
+      <!-- Hero section -->
+      <section class="hero-section">
+        <div class="hero-text">
+          <h1>
+            Seamless Communication
+            <img
+              src="./assets/purple-ring.png"
+              alt="design"
+              class="ring"
+            /><span class="with-omnigpt">with OmniGPT</span>
+          </h1>
+          <h3>Powered by Chat GPT-4.</h3>
+          <p>
+            Experience the power of AI language models with OmniGPT. <br />Our
+            chat platform provides seamless communication <br />across multiple
+            channels.
+          </p>
+          <h5>Try for free! 15-day trial, no credit card required.</h5>
+          <button class="hero-btn">Start your free trial</button>
+        </div>
+        <div class="hero-img">
+          <img src="./assets/hero-img.png" alt="hero-img" />
+        </div>
+      </section>
+      <!-- End of Hero Section -->
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
