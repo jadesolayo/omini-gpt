@@ -2,6 +2,7 @@
 main {
   background-color: var(--bg-black);
   padding: 0rem 0rem 10rem 0;
+  color: var(--white);
 
   header {
     width: min(100% - 4rem, 75rem);
@@ -72,7 +73,8 @@ main {
     }
   }
   //   Hero Section Styles
-  .hero-section {
+  .hero-section,
+  .section3 {
     width: min(100% - 8rem, 75rem);
     margin-inline: auto;
     display: flex;
@@ -100,7 +102,7 @@ main {
       .mobile-text-heading {
         display: none;
         margin-top: -2rem;
-        line-height: 1.5;
+        line-height: 1.4;
         font-family: var(--font-family-1);
         font-size: var(--font-size-medium2);
         font-weight: 500;
@@ -131,7 +133,7 @@ main {
         margin-top: 1rem;
         text-align: center;
         font-size: var(--font-size-small2);
-        @media (max-width: 1000px) {
+        @media (max-width: 700px) {
           display: block;
         }
       }
@@ -140,7 +142,7 @@ main {
         font-weight: 400;
         margin-top: 1rem;
         font-size: var(--font-size-medium);
-        @media (max-width: 1000px) {
+        @media (max-width: 700px) {
           font-size: 1.2rem;
           display: none;
         }
@@ -149,7 +151,7 @@ main {
         margin-top: 1rem;
         font-family: var(--font-family-3);
         font-weight: 300;
-        font-size: 0.87rem;
+        font-size: 1rem;
         line-height: 1.7;
         width: 65%;
         @media (max-width: 700px) {
@@ -160,6 +162,7 @@ main {
       h4 {
         margin-top: 1rem;
         font-weight: 400;
+        font-size: 0.9rem;
         font-family: var(--font-family-2);
         @media (max-width: 700px) {
           text-align: center;
@@ -171,7 +174,7 @@ main {
         @media (max-width: 700px) {
           font-size: 0.7rem;
           padding: 0.9rem;
-          width: 45%;
+          width: 60%;
           margin-inline: auto;
         }
       }
@@ -180,6 +183,115 @@ main {
       width: 35%;
       @media (max-width: 700px) {
         display: none;
+      }
+    }
+  }
+
+  // Section 2 styles
+
+  .section2 img {
+    margin-top: 6rem;
+    margin-inline: auto;
+    width: 80%;
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+  //  Section 3 Styles
+  .section3 {
+    justify-content: space-evenly;
+    margin-top: 8rem;
+    .section3-img-cont {
+      width: 30%;
+    }
+    .section3-text {
+      width: 35%;
+
+      .big-heading {
+        font-family: var(--font-family-1);
+        font-size: var(--font-size-big);
+        font-weight: 500;
+        @media (max-width: 1000px) {
+          font-size: 2rem;
+        }
+        .green {
+          color: var(--primary-color);
+        }
+      }
+      .seamless-card {
+        background-color: var(--white);
+        color: var(--bg-black);
+        border-radius: 5px;
+        padding: 0.9rem;
+        margin-top: 1.5rem;
+
+        h3 {
+          font-weight: 500;
+          font-family: var(--font-family-2);
+        }
+        p {
+          font-family: var(--font-family-3);
+          margin-top: 0.3rem;
+        }
+      }
+      .other-text {
+        margin-top: 1.5rem;
+        font-family: var(--font-family-3);
+        h2 {
+          margin-top: 1rem;
+          margin-left: 2rem;
+        }
+        .line {
+          border: none;
+          font-weight: 600;
+          margin-top: 1.5rem;
+          border-top: 1px solid rgba(255, 255, 255, 0.205);
+        }
+      }
+    }
+  }
+  // section4 Styles
+
+  .section4,
+  .section5 {
+    width: min(100% - 8rem, 75rem);
+    margin-inline: auto;
+    margin-top: 8rem;
+    .big-heading {
+      font-family: var(--font-family-1);
+      font-size: var(--font-size-big);
+      font-weight: 500;
+      text-align: center;
+      @media (max-width: 1000px) {
+        font-size: 2rem;
+      }
+      .green {
+        color: var(--primary-color);
+      }
+    }
+    .pricing-img-cont {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4rem;
+    }
+
+    // Section 5 Styles
+    .workflows-cont {
+      display: grid;
+      color: var(--bg-black);
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 2rem;
+      margin-top: 4rem;
+      .workflows {
+        padding: 1.5rem;
+        font-family: var(--font-family-3);
+        border-radius: 5px;
+        background-color: var(--white);
+        p {
+          margin-top: 1.5rem;
+        }
       }
     }
   }
