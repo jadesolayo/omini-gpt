@@ -219,6 +219,8 @@ main {
         }
       }
       .seamless-card {
+        display: flex;
+        align-items: center;
         background-color: var(--white);
         color: var(--bg-black);
         border-radius: 5px;
@@ -232,6 +234,10 @@ main {
         p {
           font-family: var(--font-family-3);
           margin-top: 0.3rem;
+        }
+        .seamless-img {
+          width: 45%;
+          margin-left: 2rem;
         }
       }
       .other-text {
@@ -253,7 +259,8 @@ main {
   // section4 Styles
 
   .section4,
-  .section5 {
+  .section5,
+  .section6 {
     width: min(100% - 8rem, 75rem);
     margin-inline: auto;
     margin-top: 8rem;
@@ -277,6 +284,7 @@ main {
     }
 
     // Section 5 Styles
+
     .workflows-cont {
       display: grid;
       color: var(--bg-black);
@@ -294,5 +302,17 @@ main {
         }
       }
     }
+  }
+  // Section 6 Styles
+
+  #testimonial-section {
+    .section6-heading {
+      width: 50%;
+      text-align: left;
+    }
+    // .stars-cont {
+    //   position: absolute;
+    //   left: 50%;
+    // }
   }
 }
